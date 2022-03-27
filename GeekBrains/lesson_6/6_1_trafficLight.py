@@ -6,7 +6,8 @@
 переключение между режимами должно осуществляться только в указанном порядке (красный, жёлтый, зелёный);
 проверить работу примера, создав экземпляр и вызвав описанный метод."""
 from time import sleep
-
+import os
+os.system('cls')
 
 class TrafficLight:
     # атрибут
@@ -14,13 +15,13 @@ class TrafficLight:
 
     # метод
     def runing(self):
-        print("Red", end="\r")
+        print()
+        print("\u001b[41m\u001b[31;1m r \u001b[0m")
         sleep(7)
-        print("Yellow\r")
+        print("\u001b[43m\u001b[33;1m Y \u001b[0m")
         sleep(2)
-        print("Green")
+        print("\u001b[42m\u001b[32;1m G \u001b[0m")
         sleep(6)
-
 
 # объект
 Kot_st = TrafficLight()
