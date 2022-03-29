@@ -6,8 +6,8 @@
 
 class Road:
 
-    def __init__(self, len, width):
-        self._length = len
+    def __init__(self, leng, width):
+        self._length = leng
         self._width = width
 
     def asphalt_mass(self, weight, hight):
