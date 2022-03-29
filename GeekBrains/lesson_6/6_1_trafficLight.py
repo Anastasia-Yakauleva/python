@@ -10,16 +10,18 @@ from time import sleep
 
 class TrafficLight:
     # атрибут
-    __light_color = ["Red", "Yellow", "Green"]
+    __light_color = ["\u001b[41m\u001b[31;1m R \u001b[0m",
+                     "\u001b[43m\u001b[33;1m Y \u001b[0m",
+                     "\u001b[42m\u001b[32;1m G \u001b[0m"]  # background, text Color and reset with ANSI escape codes
 
     # метод
     def runing(self):
-        print("\u001b[41m\u001b[31;1m r \u001b[0m")  # background, text color and reset with ANSI escape codes
-        sleep(7)
-        print("\u001b[43m\u001b[33;1m Y \u001b[0m")
+        print(TrafficLight.__light_color[0])
+        sleep(7)  #
+        print(TrafficLight.__light_color[1])
         sleep(2)
-        print("\u001b[42m\u001b[32;1m G \u001b[0m")
-        sleep(6)
+        print(TrafficLight.__light_color[2])
+        sleep(2)
 
 
 # объект
