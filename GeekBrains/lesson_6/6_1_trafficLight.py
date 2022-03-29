@@ -17,7 +17,7 @@ class TrafficLight:
     # метод
     def runing(self):
         print(TrafficLight.__light_color[0])
-        sleep(7)  #
+        sleep(7)
         print(TrafficLight.__light_color[1])
         sleep(2)
         print(TrafficLight.__light_color[2])
